@@ -13,7 +13,6 @@ void _vprintf(const char *format, va_list args)
 
 	char *s;
 
-	char *tmp;
 
 	while (*format != '\0')
 	{
@@ -21,9 +20,8 @@ void _vprintf(const char *format, va_list args)
 		{
 			if (*format == '%')
 				state = 1;
-			else
-				write(0, format, sizeof(char));
-				format++;
+			write(0, format, sizeof(char));
+			format++;
 		}
 		if (state == 1)
 		{

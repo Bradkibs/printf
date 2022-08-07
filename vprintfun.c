@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _vprintf -
- * @format:
- * Return:
+ * _vprintf - prints using format specifiers
+ * @format: a pointer to an array of input to be printed
+ * Return:nothing
  */
 void _vprintf(const char *format, va_list args)
 {
@@ -19,9 +19,15 @@ void _vprintf(const char *format, va_list args)
 		if (state == 0)
 		{
 			if (*format == '%')
+			{
+				format++;
 				state = 1;
-			write(0, format, sizeof(char));
-			format++;
+			}
+			else
+			{
+				write(0, format, sizeof(char));
+				format++;
+			}
 		}
 		if (state == 1)
 		{

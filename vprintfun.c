@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _vprintf - 
+ * _vprintf -
  * @format:
  * Return:
  */
@@ -15,7 +15,7 @@ void _vprintf(const char *format, va_list args)
 
 	char *tmp;
 
-	while (*format)
+	while (*format != '\0')
 	{
 		if (state == 0)
 		{
@@ -25,27 +25,25 @@ void _vprintf(const char *format, va_list args)
 				write(0, format, sizeof(char));
 				format++;
 		}
-		else 
+		if (state == 1)
 		{
-			if (state == 1)
+			switch (*format)
 			{
-				switch(*format)
-				{
-					case 'c':
-						c = va_arg(args, int);
-						_putchar(c);
-						break;
-					case 's':
-						s = va_arg(args, char *);
-						while (*s)
-						{
-							_putchar(*s);
-							s++;
-						}
-						break;
-				}
-				format++;
+				case 'c':
+					c = va_arg(args, int);
+					_putchar(c);
+					break;
+				case 's':
+					s = va_arg(args, char *);
+					while (*s)
+					{
+						_putchar(*s);
+						s++;
+					}
+					break;
 			}
+			format++;
+			state = 0;
 		}
 	}
 }

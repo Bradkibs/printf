@@ -3,9 +3,9 @@
 ## Project  Description
 _______________________
 
-* This project is creates a similar printf function in C
+* This project creates a similar printf function in C
 * The printf function sends formatted output to the standard output
-* A custom \_print() function was re-created to emulate basic functions of the already existing print function
+* The custom \_print() function emulates basic functions of the already existing print function as seen in the project tasks section of this Readme
 
 ## Authors
 __________

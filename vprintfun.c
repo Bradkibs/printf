@@ -3,16 +3,14 @@
 /**
  * _vprintf - prints using format specifiers
  * @format: a pointer to an array of input to be printed
+ * @args: arguments passed
  * Return:nothing
  */
 void _vprintf(const char *format, va_list args)
 {
 	int state = 0;
-
 	char c;
-
 	char *s;
-
 
 	while (*format != '\0')
 	{

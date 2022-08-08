@@ -48,6 +48,7 @@ int val_check(const char *format, va_list ap)
 	int i = 0;
 	char c;
 	char *s;
+	int d;
 
 	switch (*format)
 	{
@@ -67,6 +68,11 @@ int val_check(const char *format, va_list ap)
 			break;
 		case '%':
 			_putchar('%');
+			i++;
+			break;
+		case 'd':
+			d = va_arg(ap, int);
+			_putchar(d);
 			i++;
 			break;
 	}

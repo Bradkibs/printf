@@ -67,6 +67,7 @@ int val_check(const char *format, va_list ap)
 			break;
 		case '%':
 			_putchar('%');
+			i++;
 			break;
 	}
 	return (i);

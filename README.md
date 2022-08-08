@@ -16,14 +16,14 @@ __________
 ## Resources
 ____________
 
-* **Secrets of printf - Don Colton** 
+* **Secrets of printf - Don Colton**
 * Download the pdf here: https://www.cypress.com/file/54761/download
 
 
 ## Files  contained  in  this  directory
 ____________________________________
 
-|Name                   |Information                                                          |  
+|Name                   |Information                                                          |
 |-----------------------|---------------------------------------------------------------------|
 |`README.md`            | Contains information about the project                              |
 |` \_putchar.c`         | Contains custom putchar function for printing to the standard output|
@@ -46,15 +46,15 @@ ___________________________________
 * va\_copy (man 3 va\_copy)
 * va\_arg (man 3 va\_arg)
 
-#### Compilation 
+#### Compilation
 
 The code was compiled this way:
 
-* `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c` 
+* `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
 -------------------------------------------------------------------------------
 
 #### Write functions that produce output according to the following instructions
- 
+
 `Task 0:`
 * Handle the following conversion specifiers
 	- c
@@ -90,9 +90,7 @@ The code was compiled this way:
 
 `Task 7:`
 * Handle the following flag characters for non custom conversion specifiers
-	- +
-	- space
-	- #
+	- space, - , and #
 
 `Task 8:`
 * Handle the following length modifiers for non custom conversion specifiers

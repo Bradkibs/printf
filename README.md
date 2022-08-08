@@ -63,18 +63,18 @@ The code was compiled this way:
 
 `Task 1:`
 * Handle the following conversion specifiers
-        - d
+	- d
 	- i
 
 `Task 2:`
 * Handle the following conversion specifiers
-        - b: the unsigned int argument is converted to binary
+	- b: the unsigned int argument is converted to binary
 
 `Task 3:`
 * Handle the following conversion specifiers
-        - u
-        - o
-        - x
+	- u
+	- o
+	- x
 	- X
 
 `Task 4:`
@@ -82,7 +82,7 @@ The code was compiled this way:
 
 `Task 5:`
 * Handle the following custom conversion specifier
-        - S
+	- S
 
 `Task 6:`
 * Handle the following conversion specifier
@@ -90,26 +90,26 @@ The code was compiled this way:
 
 `Task 7:`
 * Handle the following flag characters for non custom conversion specifiers
-        - +
-        - space
-        - #
+	- +
+	- space
+	- #
 
 `Task 8:`
 * Handle the following length modifiers for non custom conversion specifiers
-        - l
-        - h
+	- l
+	- h
 
 `Task 9:`
-* Handle the field width for non-custom conversion specifiers
+* Handle the **field width** for non-custom conversion specifiers
 
 `Task 10:`
-* Handle the precision for non-custom conversion specifiers
+* Handle the **precision** for non-custom conversion specifiers
 
 `Task 11:`
-* Handle the 0 flag character for non-custom conversion specifiers
+* Handle the **0** flag character for non-custom conversion specifiers
 
 `Task 12:`
-* Handle the - flag character for non-custom conversion specifiers
+* Handle the **-** flag character for non-custom conversion specifiers
 
 `Task 13:`
 * Handle the following custom conversion specifiers

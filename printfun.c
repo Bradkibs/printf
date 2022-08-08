@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * printf -
- * @format:
- * Return:
+ * _printf - prints to the stdout
+ * @format: pointer to the character string
+ * Return: 0 when succesful
  */
 int _printf(const char *format, ...)
 {

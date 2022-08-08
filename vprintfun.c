@@ -4,13 +4,14 @@
  * _vprintf - prints using format specifiers
  * @format: a pointer to an array of input to be printed
  * @args: arguments passed
- * Return:nothing
+ * Return: the number of characters printed
  */
-void _vprintf(const char *format, va_list args)
+int _vprintf(const char *format, va_list args)
 {
 	int state = 0;
 	char c;
 	char *s;
+	int count = 0;
 
 	while (*format != '\0')
 	{
@@ -24,6 +25,7 @@ void _vprintf(const char *format, va_list args)
 			else
 			{
 				write(0, format, sizeof(char));
+				count++;
 				format++;
 			}
 		}
@@ -34,12 +36,14 @@ void _vprintf(const char *format, va_list args)
 				case 'c':
 					c = va_arg(args, int);
 					_putchar(c);
+					count++;
 					break;
 				case 's':
 					s = va_arg(args, char *);
 					while (*s)
 					{
 						_putchar(*s);
+						count++;
 						s++;
 					}
 					break;
@@ -48,4 +52,5 @@ void _vprintf(const char *format, va_list args)
 			state = 0;
 		}
 	}
+	return (count);
 }

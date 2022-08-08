@@ -34,7 +34,7 @@ ___________________________________
 ____________________________________
 
 |Name                   |Information                                                          |  
-|_______________________|_____________________________________________________________________|
+|-----------------------|---------------------------------------------------------------------|
 |`README.md`            | Contains information about the project                              |
 |` \_putchar.c`         | Contains custom putchar function for printing to the standard output|
 |` main.h`              | Contains the standard libraries and custom prototypes               |

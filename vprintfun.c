@@ -10,7 +10,7 @@ int _vprintf(const char *format, va_list args)
 {
 	int state = 0;
 	int count = 0;
-	
+
 	while (*format != '\0')
 	{
 		if (state == 0)
@@ -40,7 +40,7 @@ int _vprintf(const char *format, va_list args)
 /**
  * val_check - checks the value preceding % sign
  *@format: a pointer to a character string
- *@count: the number of arguments printed
+ *@ap: a pointer of type va_list used to iterate through the extra params
  * Return: the number of character it prints
  */
 int val_check(const char *format, va_list ap)

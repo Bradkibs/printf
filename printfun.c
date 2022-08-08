@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	va_list ap;
 
 	va_start(ap, format);
-	i =_vprintf(format, ap);
+	i = _vprintf(format, ap);
 	va_end(ap);
 	return (i);
 }

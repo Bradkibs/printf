@@ -1,4 +1,4 @@
-# TEAM PROJECT RE-CREATING printf
+# TEAM PROJECT: printf
 
 ## Project Description
 _______________________
@@ -33,13 +33,13 @@ ___________________________________
 ## Files contained in this directory
 ____________________________________
 
-|Name                   |Information            
-|_______________________|_____________________________________________________________
-| README.md             | Contains information about the project
-| \_putchar.c           | Contains custom putchar function for printing to the standard output
-| main.h                | Contains the standard libraries and custom prototypes
-| printfun.c            |
-| vprintfun.c           |
+|Name                   |Information                                                          |  
+|_______________________|_____________________________________________________________________|
+|`README.md`            | Contains information about the project                              |
+|` \_putchar.c`         | Contains custom putchar function for printing to the standard output|
+|` main.h`              | Contains the standard libraries and custom prototypes               |
+|` printfun.c`          | Calls the functions to print to the standard output                 |
+|` vprintfun.c`         | Contains switch case functions                                      |
 
 ## Tasks for the project
 ________________________

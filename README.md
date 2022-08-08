@@ -1,6 +1,6 @@
-# TEAM PROJECT: printf
+# TEAM  PROJECT:  printf
 
-## Project Description
+## Project  Description
 _______________________
 
 * This project is creates a similar printf function in C
@@ -20,7 +20,7 @@ ____________
 * Download the pdf here: https://www.cypress.com/file/54761/download
 
 
-## Files contained in this directory
+## Files  contained  in  this  directory
 ____________________________________
 
 |Name                   |Information                                                          |  
@@ -31,11 +31,11 @@ ____________________________________
 |` printfun.c`          | Calls the functions to print to the standard output                 |
 |` vprintfun.c`         | Contains switch case functions                                      |
 
-## Tasks for the project
+## Project  Tasks
 ________________________
 
 
-### Authorized functions and macros
+#### Authorized functions and macros
 ___________________________________
 
 * write (man 2 write)
@@ -46,33 +46,37 @@ ___________________________________
 * va\_copy (man 3 va\_copy)
 * va\_arg (man 3 va\_arg)
 
-### Compilation 
+#### Compilation 
 
 The code was compiled this way:
 
 * `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c` 
 -------------------------------------------------------------------------------
 
-### Write functions that produce output according to the following instructions
+#### Write functions that produce output according to the following instructions
  
 `Task 0:`
 * Handle the following conversion specifiers
 	- c
 	- s
 	- %
+
 `Task 1:`
 * Handle the following conversion specifiers
         - d
 	- i
+
 `Task 2:`
 * Handle the following conversion specifiers
         - b: the unsigned int argument is converted to binary
+
 `Task 3:`
 * Handle the following conversion specifiers
         - u
         - o
         - x
 	- X
+
 `Task 4:`
 * Use a local buffer of 1024 chars in order to call write as little as possible
 
@@ -89,10 +93,12 @@ The code was compiled this way:
         - +
         - space
         - #
+
 `Task 8:`
 * Handle the following length modifiers for non custom conversion specifiers
         - l
         - h
+
 `Task 9:`
 * Handle the field width for non-custom conversion specifiers
 
@@ -118,6 +124,8 @@ The code was compiled this way:
 
 ## Known Bugs
 _____________
+
+* No known bugs
 
 ## Technologies Used
 ____________________

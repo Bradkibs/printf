@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * u_num_to_str - converts numbers to string
+ * u_num_to_str - converts unsigned numbers to string
  * @num: the number to be converted to str
- * @buffer: a 
+ * @buffer: a buffer to hold in the string
+ * @base: the base number of integer conversion
  * Return: nothing
  */
 void u_num_to_str(uint64_t num, int base, char *buffer)
@@ -31,6 +32,14 @@ void u_num_to_str(uint64_t num, int base, char *buffer)
 	*buffer = buf[0];
 	*buffer = '\0';
 }
+/**
+ * num_to_str - converts numbers to string
+ * @num: the number to be converted to str
+ * @buffer: a buffer to hold in the string
+ * @base: the base number of integer conversion
+ * Return: nothing
+ */
+
 void num_to_str(int64_t num, int base, char *buffer)
 {
 	if (num < 0)

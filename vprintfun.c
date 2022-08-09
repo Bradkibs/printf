@@ -45,10 +45,10 @@ int _vprintf(const char *format, va_list args)
  */
 int val_check(const char *format, va_list ap)
 {
-	int i = 0;
+	int i = 0, d, k = 0;
+	char buf[28];
 	char c;
 	char *s;
-	int d;
 
 	switch (*format)
 	{
@@ -72,8 +72,12 @@ int val_check(const char *format, va_list ap)
 			break;
 		case 'd':
 			d = va_arg(ap, int);
-			_putchar(d);
-			i++;
+			num_to_str(d, 10, buf);
+			for (k = 0; buf[k]; k++)
+			{
+				_putchar(buf[k]);
+				i++;
+			}
 			break;
 	}
 	return (i);

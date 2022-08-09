@@ -41,7 +41,7 @@ int _vprintf(const char *format, va_list args)
  * val_check - checks the value preceding % sign
  *@format: a pointer to a character string
  *@ap: a pointer of type va_list used to iterate through the extra params
- * Return: the number of character it prints
+ * Return: the number of character it print
  */
 int val_check(const char *format, va_list ap)
 {

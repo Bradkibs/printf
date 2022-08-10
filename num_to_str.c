@@ -27,10 +27,10 @@ void u_num_to_str(uint64_t num, int base, char *buffer)
 			buf[cur++] = '0' + digit;
 		num /= base;
 	}
-	for (j = cur - 1; j != 0; j--)
+	for (j = cur - 1; j >= 0; j--)
 		*buffer++ = buf[j];
+	*buffer++ = '\0';
 	*buffer = buf[0];
-	*buffer = '\0';
 }
 /**
  * num_to_str - converts numbers to string
